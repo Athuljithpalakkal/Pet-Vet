@@ -20,7 +20,8 @@ import {
 const PreLoginDocs = () => {
   const [slots, setSlots] = useState([]);
   const navigate = useNavigate();
-  const url = "http://localhost:7890/api/admin/alldocs";
+  // const url = "http://localhost:7890/api/admin/alldocs";
+  const url = "https://pet-vet.onrender.com/api/admin/alldocs";
 
   const getData = async () => {
     try {
@@ -41,7 +42,7 @@ const PreLoginDocs = () => {
   const OnBook = () => {
     toast("Please login to book appointments");
     setTimeout(() => {
-      navigate("/register")
+      navigate("/register");
       // window.location.reload();
     }, 5000);
   };
@@ -83,9 +84,7 @@ const PreLoginDocs = () => {
                     <MDBListGroupItem>Phone:{item.phone}</MDBListGroupItem>
                   </MDBListGroup>
                   <MDBCardBody className="mx-auto">
-                    <button onClick={OnBook}>
-                      Book appointments
-                    </button>
+                    <button onClick={OnBook}>Book appointments</button>
                   </MDBCardBody>
                 </MDBCard>
               </MDBCol>
