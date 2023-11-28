@@ -41,10 +41,13 @@ app.use("/api/doc-reg", DocRegisterRouter);
 app.use("/api/user", userRouter);
 app.use("/api/admin", docRouter, productRouter);
 app.use("/api/Cart", cartRouter);
+
+app.get("/", (req, res) => {
+  res.send("Server is working fine");
+});
 // app.use("/api/admin",productRouter)
 
 //hai welcomeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-
 
 app.listen(process.env.PORT, () =>
   console.log("listening to port" + process.env.PORT)
