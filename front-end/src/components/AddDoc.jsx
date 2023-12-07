@@ -57,7 +57,7 @@ const AddDoc = () => {
     <div>
       <Form
         className="w-3/5 mx-auto my-5"
-        onSubmit={atSubmit}
+        // onSubmit={atSubmit}
         encType="multipart/form-data"
       >
         <Form.Group className="mb-3" controlId="formBasicName">
@@ -115,7 +115,7 @@ const AddDoc = () => {
             onChange={atChangeImg}
           />
         </Form.Group>
-        <Button variant="primary" type="submit">
+        <Button variant="primary" type="button" onClick={atSubmit}>
           Submit
         </Button>
       </Form>

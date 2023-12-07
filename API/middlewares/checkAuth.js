@@ -10,7 +10,7 @@ module.exports = (req, res, next) => {
       userId: decodedToken.userId,
       userName: decodedToken.userName,
       userRole: decodedToken.userRole,
-      doctor_name :decodedToken.doctor_name,
+      doctor_name: decodedToken.doctor_name,
     };
     // console.log(req.userData);
 
