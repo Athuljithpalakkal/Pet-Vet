@@ -7,7 +7,8 @@ import { ToastContainer, toast } from "react-toastify";
 
 export const Login = () => {
   const navigate = useNavigate();
-  const url = "http://localhost:7890/api/login";
+  // const url = "http://localhost:7890/api/login";
+  const url = "https://pet-vet.onrender.com/api/admin/login";
   const [slot, setSlot] = useState({
     username: "",
     password: "",
