@@ -10,7 +10,8 @@ function BookDoc() {
   const token = sessionStorage.getItem("token");
   console.log(token);
   const navigate = useNavigate();
-  const url = "http://localhost:7890/api/pet-vet/addpet";
+  // const url = "http://localhost:7890/api/pet-vet/addpet";
+  const url = "https://pet-vet.onrender.com/api/pet-vet/addpet";
   const options = ["Dogs", "Cats", "Birds", "Others"];
   // const [pet, setPet] = useState(options[0]);
   const [slot, setSlot] = useState({
@@ -87,13 +88,17 @@ function BookDoc() {
               <option key={idx}>{option}</option>
             ))}
           </Form.Select> */}
-          <Form.Select aria-label="Default select example" name="pet" onChange={atChange}>
-      <option>Select pet</option>
-      <option value="Dogs">Dog</option>
-      <option value="Cats">Cat</option>
-      <option value="Birds">Bird</option>
-      <option value="Others">Other</option>
-    </Form.Select>
+          <Form.Select
+            aria-label="Default select example"
+            name="pet"
+            onChange={atChange}
+          >
+            <option>Select pet</option>
+            <option value="Dogs">Dog</option>
+            <option value="Cats">Cat</option>
+            <option value="Birds">Bird</option>
+            <option value="Others">Other</option>
+          </Form.Select>
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
