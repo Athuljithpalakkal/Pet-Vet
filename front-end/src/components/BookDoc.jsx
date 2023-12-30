@@ -34,7 +34,7 @@ function BookDoc() {
   async function atSubmit(events) {
     events.preventDefault();
     await axios
-      .post(url, slot, {
+      .post(url, {}, slot, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
