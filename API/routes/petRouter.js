@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 
 // add pet booking
 
-petRouter.post("/addpet", (req, res) => {
+petRouter.post("/addpet", checkAuth, (req, res) => {
   const data = new pet({
     owner: req.body.owner,
     petname: req.body.petname,
