@@ -6,7 +6,8 @@ import axios from "axios";
 
 function Register() {
   const navigate = useNavigate();
-  const url = "http://localhost:7890/api/register";
+  // const url = "http://localhost:7890/api/register";
+  const url = "https://pet-vet.onrender.com/api/register";
   const [slot, setSlot] = useState({
     name: "",
     phone: "",
