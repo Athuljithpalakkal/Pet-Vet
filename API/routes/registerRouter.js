@@ -49,7 +49,12 @@ RegisterRouter.post("/", async (req, res) => {
   } catch (error) {
     res
       .status(500)
-      .json({ success: false, error: true, message: "Something went wrong" });
+      .json({
+        success: false,
+        error: true,
+        message: "Something went wrong",
+        errorMessage: error,
+      });
     console.log(error);
   }
 });
