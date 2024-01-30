@@ -7,7 +7,8 @@ import axios from "axios";
 
 export const Products = () => {
   const [slots, setSlots] = useState([]);
-  const url = "http://localhost:7890/api/admin/allproducts";
+  // const url = "http://localhost:7890/api/admin/allproducts";
+  const url = "https://pet-vet.onrender.com/api/admin/allproducts";
 
   const getData = async () => {
     try {
