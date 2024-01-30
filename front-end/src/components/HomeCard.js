@@ -15,7 +15,6 @@ const HomeCard = () => {
       <div className="flex flex-col justify-center">
         <h2 className="mx-auto my-5 blueText">Our Services</h2>
 
-        {/* <div data-aos="fade-up-right"> */}
           <Card className="text-center w-3/5 mx-auto my-3 creamText bgBlue">
             <Card.Header>Featured</Card.Header>
             <Card.Body>
@@ -29,7 +28,7 @@ const HomeCard = () => {
               </Button>
             </Card.Body>
           </Card>
-        {/* </div> */}
+       
 
         {/* card 2 */}
         <Card className="text-center w-3/5 mx-auto my-3 creamText bgBlue">
