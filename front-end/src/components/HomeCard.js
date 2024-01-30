@@ -2,8 +2,14 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import "./Navbar.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const HomeCard = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div>
       <div className="flex flex-col justify-center">
