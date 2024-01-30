@@ -14,11 +14,15 @@ const HomeCard = () => {
           <Card.Body>
             <Card.Title>Medical Clinic</Card.Title>
             <Card.Text>
-              With supporting text below as a natural lead-in to additional
-              content.
+              Best in class doctors available to take care of your pets.
             </Card.Text>
-            <Button variant="light" className="bgCream blueText">
-              Go somewhere
+            <Button
+              variant="light"
+              className="bgCream blueText"
+              as={link}
+              to={"/alldocs"}
+            >
+              Doctors
             </Button>
           </Card.Body>
         </Card>
@@ -29,11 +33,16 @@ const HomeCard = () => {
           <Card.Body>
             <Card.Title>Pet Grooming</Card.Title>
             <Card.Text>
-              With supporting text below as a natural lead-in to additional
-              content.
+              Best in class treatments and grooming methods provided to you by
+              us.
             </Card.Text>
-            <Button variant="light" className="bgCream blueText">
-              Go somewhere
+            <Button
+              variant="light"
+              className="bgCream blueText"
+              as={link}
+              to={"/alldocs"}
+            >
+              Doctors
             </Button>
           </Card.Body>
         </Card>
@@ -42,12 +51,14 @@ const HomeCard = () => {
           <Card.Header>Featured</Card.Header>
           <Card.Body>
             <Card.Title>Pet Essentials</Card.Title>
-            <Card.Text>
-              With supporting text below as a natural lead-in to additional
-              content.
-            </Card.Text>
-            <Button variant="light" className="bgCream blueText">
-              Go somewhere
+            <Card.Text>Essential products for your dear pets.</Card.Text>
+            <Button
+              variant="light"
+              className="bgCream blueText"
+              as={link}
+              to={"/allproducts"}
+            >
+              Products
             </Button>
           </Card.Body>
         </Card>
