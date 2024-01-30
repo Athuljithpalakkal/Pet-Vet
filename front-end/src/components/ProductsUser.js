@@ -12,7 +12,8 @@ const ProductsUser = () => {
   const [slots, setSlots] = useState([]);
   const token = sessionStorage.getItem("token");
 
-  const url = "http://localhost:7890/api/admin/allproducts";
+  // const url = "http://localhost:7890/api/admin/allproducts";
+  const url = "https://pet-vet.onrender.com/api/admin/allproducts";
   const cartUrl = "http://localhost:7890/api/cart/add";
 
   const getData = async () => {
@@ -63,7 +64,7 @@ const ProductsUser = () => {
                   <Button
                     variant="light"
                     className="bgCream blueText"
-                    onClick={()=> cart(item)}
+                    onClick={() => cart(item)}
                   >
                     Add to cart
                   </Button>
