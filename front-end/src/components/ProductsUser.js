@@ -12,7 +12,6 @@ const ProductsUser = () => {
   const [slots, setSlots] = useState([]);
   const token = sessionStorage.getItem("token");
 
-  // const url = "http://localhost:7890/api/admin/allproducts";
   const url = "https://pet-vet.onrender.com/api/admin/allproducts";
   const cartUrl = "http://localhost:7890/api/cart/add";
 
