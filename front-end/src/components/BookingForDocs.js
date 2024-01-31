@@ -15,7 +15,8 @@ import {
 const BookingForDocs = () => {
   const [slots, setSlots] = useState([]);
   const token = sessionStorage.getItem("token");
-  const url = "http://localhost:7890/api/pet-vet/docbooking";
+  // const url = "http://localhost:7890/api/pet-vet/docbooking";
+  const url = "https://pet-vet.onrender.com/api/pet-vet/docbooking";
 
   const getData = async () => {
     try {
@@ -23,8 +24,7 @@ const BookingForDocs = () => {
         headers: {
           Authorization: `Bearer ${token}`,
         },
-      }
-        );
+      });
       // console.log(response);
       const data = response.data.data;
       // console.log(data);
@@ -56,12 +56,9 @@ const BookingForDocs = () => {
                   <MDBCardText>Pet's Name :{item.petname}</MDBCardText>
                   <MDBCardText>Phone number :{item.phone}</MDBCardText>
                   <MDBCardText>Email :{item.email}</MDBCardText>
-                  
+
                   <div className="flex flex-row justify-around">
-                    <MDBBtn
-                      className="w-3/5 my-1"
-                      href={`/view/${item._id}`}
-                    >
+                    <MDBBtn className="w-3/5 my-1" href={`/view/${item._id}`}>
                       view
                     </MDBBtn>
                   </div>
@@ -75,6 +72,6 @@ const BookingForDocs = () => {
       )}
     </MDBRow>
   );
-}
+};
 
-export default BookingForDocs
+export default BookingForDocs;
