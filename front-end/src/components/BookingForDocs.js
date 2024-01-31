@@ -15,7 +15,6 @@ import {
 const BookingForDocs = () => {
   const [slots, setSlots] = useState([]);
   const token = sessionStorage.getItem("token");
-  // const url = "http://localhost:7890/api/pet-vet/docbooking";
   const url = "https://pet-vet.onrender.com/api/pet-vet/docbooking";
 
   const getData = async () => {
